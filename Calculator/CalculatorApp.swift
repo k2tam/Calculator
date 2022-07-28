@@ -12,6 +12,7 @@ struct CalculatorApp: App {
     var body: some Scene {
         WindowGroup {
             CalculatorHome()
+                .environmentObject(Calculator())
         }
     }
 }
